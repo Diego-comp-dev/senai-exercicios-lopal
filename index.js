@@ -40,13 +40,24 @@
 // }
 
 // Peça a nota de um aluno e informe se ele foi aprovado, ficou em recuperação ou foi reprovado, considerando as faixas que você definir.
-let nota = Number(prompt("Digite sua nota:"))
-if (nota >= 6 && nota <= 10) {
-    alert(`Voce foi aprovado com a sua nota ${nota}`)
-} else if(nota < 6 && nota >=4){
-    alert(`Voce esta de recuperação com a sua nota ${nota}`)
-} else if(nota <4 && nota >= 0) {
-    alert(`Voce foi reprovado com a sua nota ${nota}`)
+// let nota = Number(prompt("Digite sua nota:"))
+// if (nota >= 6 && nota <= 10) {
+//     alert(`Voce foi aprovado com a sua nota ${nota}`)
+// } else if(nota < 6 && nota >=4){
+//     alert(`Voce esta de recuperação com a sua nota ${nota}`)
+// } else if(nota <4 && nota >= 0) {
+//     alert(`Voce foi reprovado com a sua nota ${nota}`)
+// } else{
+//     alert("Nota invalida, digite uma nota entre 0 e 10")
+// }
+
+// Peça o preço de um produto e a quantidade desejada, calcule o valor total e aplique um desconto caso a quantidade seja maior que um valor definido por você.
+let valor = Number(prompt("Digite o valor do seu produto:"))
+let quant = Number(prompt("Digite a quantidade  desejada:"))      
+let valor_total = valor * quant
+let desconto = valor_total * 0.9
+if (quant >= 5) {
+    alert(`Voce ganhou um desconto de 10%, o valor a pagar é: ${desconto}R$`)
 } else{
-    alert("Nota invalida, digite uma nota entre 0 e 10")
+    alert(`Voce não ganhou desconto, o valor a pagar é: ${valor_total}R$`)
 }
