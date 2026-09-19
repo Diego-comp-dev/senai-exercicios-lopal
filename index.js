@@ -26,15 +26,27 @@
 // }
 
 // Peça três números e informe qual é o maior entre eles.
-let num_one = Number(prompt("Digite o primeiro numero:"))
-let num_two = Number(prompt("Digite o segundo numero:"))
-let num_three = Number(prompt("Digite o terceiro numero:"))
-if (num_one > num_two && num_one > num_three) {
-    alert(`O primeiro numero é o maior: ${num_one}`)
-} else if (num_two > num_one && num_two > num_three){
-    alert(`O segundo numero é o maior: ${num_two}`)
-} else if(num_three > num_one && num_three > num_two) {
-    alert(`O terceiro numero é o maior: ${num_three}`)
-} else {
-    alert("Digite numeros diferentes um dos outros")
+// let num_one = Number(prompt("Digite o primeiro numero:"))
+// let num_two = Number(prompt("Digite o segundo numero:"))
+// let num_three = Number(prompt("Digite o terceiro numero:"))
+// if (num_one > num_two && num_one > num_three) {
+//     alert(`O primeiro numero é o maior: ${num_one}`)
+// } else if (num_two > num_one && num_two > num_three){
+//     alert(`O segundo numero é o maior: ${num_two}`)
+// } else if(num_three > num_one && num_three > num_two) {
+//     alert(`O terceiro numero é o maior: ${num_three}`)
+// } else {
+//     alert("Digite numeros diferentes um dos outros")
+// }
+
+// Peça a nota de um aluno e informe se ele foi aprovado, ficou em recuperação ou foi reprovado, considerando as faixas que você definir.
+let nota = Number(prompt("Digite sua nota:"))
+if (nota >= 6 && nota <= 10) {
+    alert(`Voce foi aprovado com a sua nota ${nota}`)
+} else if(nota < 6 && nota >=4){
+    alert(`Voce esta de recuperação com a sua nota ${nota}`)
+} else if(nota <4 && nota >= 0) {
+    alert(`Voce foi reprovado com a sua nota ${nota}`)
+} else{
+    alert("Nota invalida, digite uma nota entre 0 e 10")
 }
