@@ -52,12 +52,32 @@
 // }
 
 // Peça o preço de um produto e a quantidade desejada, calcule o valor total e aplique um desconto caso a quantidade seja maior que um valor definido por você.
-let valor = Number(prompt("Digite o valor do seu produto:"))
-let quant = Number(prompt("Digite a quantidade  desejada:"))      
-let valor_total = valor * quant
-let desconto = valor_total * 0.9
-if (quant >= 5) {
-    alert(`Voce ganhou um desconto de 10%, o valor a pagar é: ${desconto}R$`)
-} else{
-    alert(`Voce não ganhou desconto, o valor a pagar é: ${valor_total}R$`)
+// let valor = Number(prompt("Digite o valor do seu produto:"))
+// let quant = Number(prompt("Digite a quantidade  desejada:"))      
+// let valor_total = valor * quant
+// let desconto = valor_total * 0.9
+// if (quant >= 5) {
+//     alert(`Voce ganhou um desconto de 10%, o valor a pagar é: ${desconto}R$`)
+// } else{
+//     alert(`Voce não ganhou desconto, o valor a pagar é: ${valor_total}R$`)
+// }
+
+// Peça dois números e um operador (+, -, *, /) digitado pelo usuário, e exiba o resultado da operação correspondente.
+let num_one = Number(prompt("Digite o primeiro numero:"))
+let num_two = Number(prompt("Digite o segundo numero:"))
+let operador = (prompt("Digite a operação que deseja fazer(+, -, *, /):"))
+let soma = num_one + num_two
+let sub = num_one - num_two
+let div = (num_one / num_two).toFixed(2)
+let mut = num_one * num_two
+if (operador === "+") {
+    alert(`O resultado da sua soma é: ${soma}`)
+} else if (operador === '-') {
+    alert(`${sub}`)
+} else if (operador === '/') {
+    alert(`${div}`)
+} else if (operador === '*') {
+    alert(`${mut}`)
+} else {
+    alert("operador invalido")
 }
