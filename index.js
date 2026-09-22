@@ -83,11 +83,21 @@
 // }
 
 // Peça o ano de nascimento do usuário e calcule a idade aproximada, informando também se ele já pode tirar carteira de motorista.
-let ano_nasc = Number(prompt("Digite seu ano de nascimento:"))
-const ano_atual = new Date().getFullYear()
-let idade = ano_atual - ano_nasc
-if (idade >= 18) {
-    alert(`voce tem ${idade} anos, voce pode tirar a carteira de motorista`)
+// let ano_nasc = Number(prompt("Digite seu ano de nascimento:"))
+// const ano_atual = new Date().getFullYear()
+// let idade = ano_atual - ano_nasc
+// if (idade >= 18) {
+//     alert(`voce tem ${idade} anos, voce pode tirar a carteira de motorista`)
+// } else {
+//     alert(`voce tem ${idade} anos, voce ainda não pode tirar a carteira de motorista`)
+// }
+
+// Peça a temperatura em graus Celsius e informe se está frio, ameno ou quente, considerando as faixas que você definir.
+let temp = Number(prompt("Digite a temperatura em graus Celsius"))
+if (temp >= 30) {
+    alert(`esta quente`)
+} else if(temp >= 20){
+    alert(`esta ameno`)
 } else {
-    alert(`voce tem ${idade} anos, voce ainda não pode tirar a carteira de motorista`)
+    alert(`esta frio`)
 }
