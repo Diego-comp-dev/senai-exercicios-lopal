@@ -63,21 +63,31 @@
 // }
 
 // Peça dois números e um operador (+, -, *, /) digitado pelo usuário, e exiba o resultado da operação correspondente.
-let num_one = Number(prompt("Digite o primeiro numero:"))
-let num_two = Number(prompt("Digite o segundo numero:"))
-let operador = (prompt("Digite a operação que deseja fazer(+, -, *, /):"))
-let soma = num_one + num_two
-let sub = num_one - num_two
-let div = (num_one / num_two).toFixed(2)
-let mut = num_one * num_two
-if (operador === "+") {
-    alert(`O resultado da sua soma é: ${soma}`)
-} else if (operador === '-') {
-    alert(`${sub}`)
-} else if (operador === '/') {
-    alert(`${div}`)
-} else if (operador === '*') {
-    alert(`${mut}`)
+// let num_one = Number(prompt("Digite o primeiro numero:"))
+// let num_two = Number(prompt("Digite o segundo numero:"))
+// let operador = (prompt("Digite a operação que deseja fazer(+, -, *, /):"))
+// let soma = num_one + num_two
+// let sub = num_one - num_two
+// let div = (num_one / num_two).toFixed(2)
+// let mut = num_one * num_two
+// if (operador === "+") {
+//     alert(`O resultado da sua soma é: ${soma}`)
+// } else if (operador === '-') {
+//     alert(`${sub}`)
+// } else if (operador === '/') {
+//     alert(`${div}`)
+// } else if (operador === '*') {
+//     alert(`${mut}`)
+// } else {
+//     alert("operador invalido")
+// }
+
+// Peça o ano de nascimento do usuário e calcule a idade aproximada, informando também se ele já pode tirar carteira de motorista.
+let ano_nasc = Number(prompt("Digite seu ano de nascimento:"))
+const ano_atual = new Date().getFullYear()
+let idade = ano_atual - ano_nasc
+if (idade >= 18) {
+    alert(`voce tem ${idade} anos, voce pode tirar a carteira de motorista`)
 } else {
-    alert("operador invalido")
+    alert(`voce tem ${idade} anos, voce ainda não pode tirar a carteira de motorista`)
 }
