@@ -93,11 +93,22 @@
 // }
 
 // Peça a temperatura em graus Celsius e informe se está frio, ameno ou quente, considerando as faixas que você definir.
-let temp = Number(prompt("Digite a temperatura em graus Celsius"))
-if (temp >= 30) {
-    alert(`esta quente`)
-} else if(temp >= 20){
-    alert(`esta ameno`)
+// let temp = Number(prompt("Digite a temperatura em graus Celsius"))
+// if (temp >= 30) {
+//     alert(`esta quente`)
+// } else if(temp >= 20){
+//     alert(`esta ameno`)
+// } else {
+//     alert(`esta frio`)
+// }
+
+// Peça dois números ao usuário e informe se o primeiro é maior, menor ou igual ao segundo, usando os operadores de comparação.
+let num_one = Number(prompt("Digite o primeiro numero:"))
+let num_two = Number(prompt("Digite o segundo numero:"))
+if (num_one > num_two) {
+    alert("o primeiro numero é maior")
+} else if(num_one < num_two){
+    alert("o segundo numero é maior")
 } else {
-    alert(`esta frio`)
+    alert("os numeros são iguais")
 }
